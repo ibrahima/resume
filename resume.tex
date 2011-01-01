@@ -1,0 +1,108 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Ibrahim}
+\familyname{Awwal}
+\address{4249 Katie Lane}{Pleasanton, CA 94588}    % optional, remove the line if not wanted
+\mobile{925-271-7003}                    % optional, remove the line if not wanted
+\phone{phone (optional)}                      % optional, remove the line if not wanted
+\email{ibrahim.awwal@berkeley.edu}                      % optional, remove the line if not wanted
+\homepage{hkn.eecs.berkeley.edu/~ibrahima}                % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{Fall 2008-- Spring 2012 (projected)}{Bachelor of Science, Electrical Engineering and Computer Science}{\newline University of California, Berkeley}{GPA 3.97}{Major GPA 4.00}{Description}  % arguments 3 to 6 can be left empty
+
+\section{Relevant Classwork}
+\cventry{Hardware}{EE141}{EE105}{CS61C}{EE40}{}
+\cventry{Signals}{EE20}{EE120}{EE126}{}{}
+\cventry{Computer Science}{CS61A}{CS61C}{CS70}{CS188}{CS280}
+\cventry{In Progress}{EE149}{Math110}{CS152}{}{}
+
+\section{Work Experience}
+\subsection{Vocational}
+\cventry{June--August 2010}{Intern}{Lawrence Livermore National Lab}{Livermore, CA}{}{General description no longer than 1--2 lines.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Achievement 1;
+  \begin{itemize}%
+  \item Sub-achievement (a);
+  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    \begin{itemize}
+    \item Sub-sub-achievement i;
+    \end{itemize}
+  \end{itemize}
+\end{itemize}}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+\subsection{Miscellaneous}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Languages}
+\cvlanguage{Language 1}{Skill level}{Comment}
+\cvlanguage{Language 2}{Skill level}{Comment}
+\cvlanguage{Language 3}{Skill level}{Comment}
+
+\section{Skills}
+\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Interests}
+\cvline{hobby 1}{\small Description}
+\cvline{hobby 2}{\small Description}
+\cvline{hobby 3}{\small Description}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
