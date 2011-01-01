@@ -16,7 +16,7 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.80]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -26,16 +26,8 @@
 \familyname{Awwal}
 \address{4249 Katie Lane}{Pleasanton, CA 94588}    % optional, remove the line if not wanted
 \mobile{925-271-7003}                    % optional, remove the line if not wanted
-	\email{ibrahim.awwal@berkeley.edu}                      % optional, remove the line if not wanted
+\email{ibrahim.awwal@berkeley.edu}                      % optional, remove the line if not wanted
 
-% to show numerical labels in the bibliography; only useful if you make citations in your resume
-\makeatletter
-\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-\makeatother
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
@@ -54,45 +46,21 @@
 \cvline{In Progress}{Embedded Systems, Linear Algebra, Computer Architecture}
 
 \section{Work Experience}
-\cventry{June--August 2010}{Intern}{Lawrence Livermore National Lab}{Livermore, CA}{}{General description no longer than 1--2 lines.\newline{}%
-\begin{itemize}%
-\item Achievement 1;
-  \begin{itemize}%
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-  \end{itemize}
-\end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
-
-\section{Languages}
-\cvlanguage{Language 1}{Skill level}{Comment}
-\cvlanguage{Language 2}{Skill level}{Comment}
-\cvlanguage{Language 3}{Skill level}{Comment}
+\cventry{September 2010--present}{Undergraduate Researcher}{}{}{}{Assisting in personal robotics research in Professor Pieter Abbeel's PR2 lab}
+\cventry{June--August 2010}{Intern}{Lawrence Livermore National Lab}{Livermore}{CA}{Researched and implemented algorithms for detecting duplicate passages in large bodies of text.}%
+\cventry{September 2009--May 2010}{Reader}{UC Berkeley EECS Department}{Berkeley}{CA}{Graded homeworks, projects, and exams for Structure and Interpretation of Computer Programs and Machine Structures}
 
 \section{Skills}
-\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvcomputer{Languages}{Java, C, Lisp, Python, MIPS, Bash}{category 3}{XXX, YYY, ZZZ}
+\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
 
-\section{Interests}
-\cvline{hobby 1}{\small Description}
-\cvline{hobby 2}{\small Description}
-\cvline{hobby 3}{\small Description}
-
-% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}       % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+\section{Projects}
+\cvline{SRAM Array}{\small Description}
+\cvline{AI Projects}{\small Description}
+\cvline{Robotic Car}{\small Description}
+\cvline{Analog Radio}{\small Description}
+\cvline{16 bit CPU}{\small Description}
+\cvline{HKN Computing Services Officer}{\small Description , (Fall 2009 -- Fall 2010)}
 
 \end{document}
 
