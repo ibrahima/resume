@@ -1,0 +1,125 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.80, vmargin=0.5in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+%https://answers.launchpad.net/moderncv/+question/128655
+\firstname{Ibrahim}
+\familyname{Awwal}
+% \address{}{San Diego, CA 92092}    % optional, remove the line if not wanted
+\mobile{925-271-7003}                    % optional, remove the line if not wanted
+\email{iawwal@ucsd.edu}                      % optional, remove the line if not wanted
+\homepage{ibrahim.io}
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{Fall 2013-- Present}{Phd Student, Electrical and Computer Engineering}{University of California, San Diego}{Concentration: Intelligent Systems, Robotics, and Control}{}{GPA: 3.30}  % arguments 3 to 6 can be left empty
+\cventry{Fall 2008-- Spring 2012}{Bachelor of Science, Electrical Engineering and Computer Science}{\newline University of California, Berkeley}{}{}{GPA: 3.79}  % arguments 3 to 6 can be left empty
+
+\section{Relevant Coursework}
+\cvline{Graduate}{Statistical Learning, Parameter Estimation, Digital
+  Signal Processing, Digital Image Processing, Random Processes,
+  Convex Optimization, Machine Learning, Robotics, Computer Vision,
+  Embedded Systems, Compressed Sensing} \cvline{Undergraduate}{Digital
+  Design, Computer Architecture, Digital Integrated Circuits,
+  Microelectronic Devices and Circuits, Machine Structures,
+  Mechatronic Design, Feedback Control, Signals and Systems, Computer
+  Graphics, Artificial Intelligence}
+
+\section{Research}
+\cventry{February 2015-Present}{Mobile Devices}{University of
+  California, San Diego}{La Jolla}{CA}{Characterization and
+  analysis of current and future user workloads, with an emphasis on the
+  memory subsystem, for mobile devices. PI: Professor Tajana Rosing.
+}
+\cventry{January--June 2014}{Brain Machine Interfaces}{University of
+  California, San Diego}{La Jolla}{CA}{Worked on analyzing
+  micro-electocorticography signals for use in prosthetic devices.
+  PI: Professor Vikash Gilja.}
+\cventry{Sept 2010--Dec
+  2012}{Undergraduate Researcher}{University of California,
+  Berkeley}{Berkeley}{CA}{Personal robotics research in Professor
+  Pieter Abbeel's PR2 lab. Worked on automating laundry related tasks
+  and motion planning using convex optimization.}
+
+\section{Teaching}
+\cventry{March--June 2014}{CSE 20 TA}{University of California, San
+  Diego}{La Jolla}{CA}{Introduction to Discrete Math for Computer Science.}
+
+\cventry{Sept--Dec 2014}{CSE 103 TA}{University of California, San
+  Diego}{La Jolla}{CA}{Introduction to Probability and
+  Statistics. Taught and developed software for analyzing students'
+  mistakes, including parsing and front end web development.}
+
+\cventry{Jan--May 2012}{EE40 Head Lab TA}{University of California,
+  Berkeley}{Berkeley}{CA}{Introduction to Microelectronic
+  Circuits. Managed other lab TAs, served as the interface between
+  instructor, TAs, students. Also coordinated logistics with local
+  vendors for final project where students built an EEG amplifier
+  board.}
+
+\cventry{Aug--Dec 2011}{EE20n
+  TA}{University of California, Berkeley}{Berkeley}{CA}{Teaching
+  assistant for EE20n, Structure and Interpretation of Signals and
+  Systems, focused on teaching signals and systems using Labview
+  software.}
+
+\section{Work Experience}
+\cventry{May--Aug 2012, Jan--Aug 2013}{Full Stack Software
+  Engineer}{Gradescope}{Berkeley}{CA}{Initial lead developer for
+  Gradescope, an online web application for facilitating exam
+  grading. Worked on frontend, backend, and devops related tasks}
+\cventry{Aug--Sept 2012}{Front End Engineer}{edX}{Cambridge}{MA}{Developed discussion forum front end software for edX.org's initial launch.}
+
+\cventry{June--Aug 2010}{Intern}{Lawrence Livermore National
+  Lab}{Livermore}{CA}{Researched and implemented algorithms for
+  detecting duplicate passages in large bodies of text, using Hadoop
+  MapReduce and HBase.}%
+% Publications
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} % 'publications' is the name of a BibTeX file
+
+\section{Projects}
+\cvline{32 bit CPU}{\small Designed and implemented a 3 stage pipelined MIPS CPU on FPGA for CS150, Digital Design}
+\cvline{SRAM Array}{\small Design, schematic, and layout of a 16x20 (5 bit word) SRAM array, address decoder, and flash ADC decoder using Cadence tools. Optimized for low power and speed.}
+
+\section{Skills}
+\cvitem{Languages}{Matlab, Java, C, C++, Python, Ruby, Bash, Lisp, \LaTeX}
+\cvitem{Software}{Cadence Virtuoso, SPICE, Xilinx, ROS, Git, Linux, Labview}
+\cvitem{Web}{AngularJS, Backbone.js, React, Bower, Grunt, Ruby on Rails, Django, Ansible, AWS}
+\section{Honors}
+\cvline{Powell Fellow}{Recipient of Powell Graduate Fellowship from the UCSD ECE department}
+\end{document}
+
+%% end of file `template_en.tex'.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
